@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafqi Fitra Abdillah - Digital Marketing & Communication Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            DEFAULT: '#550B18',
+                            dark: '#3d0711',
+                            light: '#721223'
+                        },
+                        sand: {
+                            DEFAULT: '#F2E5C5',
+                            light: '#faf5e8',
+                            dark: '#e2cc9b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-maroon selection:text-sand">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/80 backdrop-blur-md border-b border-sand/60">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-extrabold text-maroon tracking-tight">
+                RAFQI<span class="text-slate-400">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-maroon transition-colors">About</a>
+                <a href="#experience" class="hover:text-maroon transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-maroon transition-colors">Projects & Achievements</a>
+                <a href="#skills" class="hover:text-maroon transition-colors">Skills</a>
+                <a href="#contact" class="px-4 py-2 bg-maroon text-sand rounded-full font-semibold hover:bg-maroon-dark transition-all shadow-sm">Contact Me</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-maroon focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-sand border-b border-sand-dark px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-700 font-medium hover:text-maroon">About</a>
+            <a href="#experience" class="block text-slate-700 font-medium hover:text-maroon">Experience</a>
+            <a href="#projects" class="block text-slate-700 font-medium hover:text-maroon">Projects & Achievements</a>
+            <a href="#skills" class="block text-slate-700 font-medium hover:text-maroon">Skills</a>
+            <a href="#contact" class="block text-center px-4 py-2 bg-maroon text-sand rounded-full font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen pt-28 pb-16 flex items-center bg-gradient-to-b from-sand/30 to-slate-50 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sand text-maroon text-xs font-bold tracking-wide uppercase border border-sand-dark/50">
+                    <span class="w-2 h-2 rounded-full bg-maroon animate-pulse"></span> Available for Opportunities
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Rafqi Fitra Abdillah
+                </h1>
+                <p class="text-xl sm:text-2xl font-bold text-maroon">
+                    Digital Marketing & Communication Specialist
+                </p>
+                <p class="text-slate-600 text-base sm:text-lg max-w-xl leading-relaxed">
+                    Driving brand visibility, audience engagement, and data-backed campaign growth through strategic healthcare marketing, social media management, and performance-driven Meta Ads.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#contact" class="px-7 py-3.5 bg-maroon text-sand font-semibold rounded-xl hover:bg-maroon-dark transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                        Get in Touch
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="#experience" class="px-7 py-3.5 bg-sand text-maroon font-semibold rounded-xl hover:bg-sand-dark/60 transition-all border border-sand-dark/50">
+                        Explore Work
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-sand p-3 border-2 border-sand-dark shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300">
+                    <div class="w-full h-full rounded-2xl bg-slate-200 overflow-hidden flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Rafqi Fitra Abdillah" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">About Me</h2>
+                <div class="w-16 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-slate-600">Professional background, education, and core expertise summary.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-6 space-y-6">
+                    <h3 class="text-2xl font-bold text-slate-900 leading-snug">
+                        Bridging strategic communication with data-driven digital execution.
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Digital Marketing and Communications professional with hands-on experience in healthcare marketing, social media management, content development, Meta Ads, and campaign performance analysis. Experienced in developing audience-focused campaigns, strengthening brand visibility, and translating marketing data into actionable insights[cite: 1].
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Holds a Bachelor's degree in International Relations from Muhammadiyah Malang University, equipped with a strong foundation in strategic communication, public relations, research, and stakeholder coordination[cite: 1, 2].
+                    </p>
+                </div>
+                <div class="md:col-span-6 bg-sand/30 p-8 rounded-3xl border border-sand space-y-6">
+                    <h4 class="text-lg font-bold text-maroon">Quick Facts</h4>
+                    <ul class="space-y-4 text-sm text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-maroon min-w-[120px]">Location:</span>
+                            <span>Bangkalan, Jawa Timur, Indonesia[cite: 1]</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-maroon min-w-[120px]">Education:</span>
+                            <span>Bachelor of International Relations, Muhammadiyah Malang University (GPA: 3.27/4.00)[cite: 2]</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-maroon min-w-[120px]">Current Role:</span>
+                            <span>Digital Marketing & Content Creator at INTRO Dental Main Clinic[cite: 1]</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-maroon min-w-[120px]">Interests:</span>
+                            <span>Performance Marketing, Meta Ads Optimization, Social Media SEO, Brand Communication[cite: 2]</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Professional Experience</h2>
+                <div class="w-16 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-slate-600">My professional journey in digital marketing, content creation, and event operations.</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm relative pl-8 sm:pl-10">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-maroon rounded-l-3xl"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Digital Marketing & Content Creator</h3>
+                            <p class="text-maroon font-semibold">INTRO Dental Main Clinic | Bangkalan, Madura, East Java[cite: 1]</p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-sand text-maroon text-xs font-bold rounded-full w-fit">July 2025 - Present[cite: 1]</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <li>Manage end-to-end digital marketing activities across Instagram, TikTok, Facebook, and Meta Ads to strengthen brand awareness, audience engagement, and service visibility[cite: 1].</li>
+                        <li>Develop content calendars, creative concepts, scripts, copywriting, and campaign materials aligned with target audiences and marketing objectives[cite: 1].</li>
+                        <li>Plan and manage Meta Ads campaigns, including campaign objectives, audience targeting, budget allocation, creative assets, and performance monitoring[cite: 1].</li>
+                        <li>Analyze campaign performance through reach, impressions, cost per result, profile visits, link clicks, and direct messages to identify optimization opportunities[cite: 1].</li>
+                        <li>Prepare marketing performance reports featuring data analysis, campaign evaluation, key findings, and actionable recommendations[cite: 1].</li>
+                        <li>Develop promotional campaigns and external marketing partnerships, including dental service promotions and seasonal activations[cite: 1].</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm relative pl-8 sm:pl-10">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-sand-dark rounded-l-3xl"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Freelance Event Crew</h3>
+                            <p class="text-maroon font-semibold">Bhunga Production Event Organizer | Bangkalan, Madura - East Java[cite: 1]</p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-sand text-maroon text-xs font-bold rounded-full w-fit">September 2024 - Present[cite: 1]</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <li>Coordinate on-site event operations, including venue readiness, vendor coordination, guest flow, and timeline execution[cite: 1].</li>
+                        <li>Collaborate with clients, vendors, families, guests, and event crew to align schedules, communicate changes, and resolve operational issues[cite: 1].</li>
+                        <li>Monitor event execution and proactively coordinate solutions to maintain smooth transitions and ensure effective event delivery[cite: 1].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Achievements Section -->
+    <section id="projects" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Key Achievements & Highlights</h2>
+                <div class="w-16 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-slate-600">Measurable impact and performance milestones from digital campaigns.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-sand/20 p-8 rounded-3xl border border-sand hover:border-sand-dark transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-maroon text-sand flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
+                            426K
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Impressions Milestone</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Generated 426K+ Instagram impressions and reached 187K+ accounts from September 1-23, 2026 at INTRO Dental Main Clinic[cite: 1].
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sand-dark/40 text-xs font-semibold text-maroon">
+                        Campaign Performance Analysis[cite: 1]
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-sand/20 p-8 rounded-3xl border border-sand hover:border-sand-dark transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-maroon text-sand flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
+                            3.8K+
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Engagement & Link Clicks</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Recorded 18,165 profile visits, 3,876 link clicks, and 100 direct messages during the September 2026 reporting period[cite: 1].
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sand-dark/40 text-xs font-semibold text-maroon">
+                        Meta Ads & Social Media SEO[cite: 1, 2]
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-sand/20 p-8 rounded-3xl border border-sand hover:border-sand-dark transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-maroon text-sand flex items-center justify-center font-extrabold text-lg mb-6 shadow-sm">
+                            +699
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Audience Growth</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Acquired 699 new targeted Instagram followers during the September 2026 reporting period through optimized content and copywriting[cite: 1].
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sand-dark/40 text-xs font-semibold text-maroon">
+                        Content Strategy & Community[cite: 1, 2]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">My Skills & Expertise</h2>
+                <div class="w-16 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-slate-600">Comprehensive overview of technical capabilities, tools, and professional strengths.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-maroon">Digital Marketing & Strategy</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Digital Marketing Strategy</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Social Media Management</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Meta Ads Campaign Management</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Healthcare Marketing</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Content Strategy & Planning</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-maroon">Content & Communication</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Copywriting</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Scriptwriting</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Marketing Communication</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Public Relations</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Strategic Communication</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-maroon">Analytics & Reporting</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Campaign Performance Analysis</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Marketing Reporting</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Data Analysis</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Research & Analytical Skills</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <h3 class="text-lg font-bold text-maroon">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Meta Ads Manager</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">CapCut Video Editing</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Canva</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Google Business & Search Console</span>
+                        <span class="px-3.5 py-1.5 bg-sand/60 border border-sand-dark/50 text-slate-800 text-xs font-semibold rounded-full">Microsoft Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Let's Connect</h2>
+                <div class="w-16 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-slate-600">Have an opportunity, project, or collaboration in mind? Feel free to reach out.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-4xl mx-auto">
+                <div class="md:col-span-5 space-y-6 bg-sand/30 p-8 rounded-3xl border border-sand">
+                    <h3 class="text-xl font-bold text-slate-900">Contact Information</h3>
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-maroon text-sand flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Email</p>
+                                <a href="mailto:rafqiabdillah2@gmail.com" class="font-semibold text-slate-900 hover:text-maroon">rafqiabdillah2@gmail.com[cite: 1]</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-maroon text-sand flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Phone / WhatsApp</p>
+                                <a href="https://wa.me/6281334790062" class="font-semibold text-slate-900 hover:text-maroon">+62 81334790062[cite: 1]</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-maroon text-sand flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Location</p>
+                                <p class="font-semibold text-slate-900">Bangkalan, Jawa Timur, Indonesia[cite: 1]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda berhasil disimulasikan terkirim.');">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-maroon transition-colors text-sm" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Your Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-maroon transition-colors text-sm" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-maroon transition-colors text-sm" placeholder="Tuliskan pesan atau penawaran Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 bg-maroon text-sand font-semibold rounded-xl hover:bg-maroon-dark transition-all shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 space-y-4">
+            <p class="font-bold text-sand text-base">Rafqi Fitra Abdillah</p>
+            <p>© 2026 Digital Marketing & Communication Specialist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
